@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios'
+import LifetimeStats from './LifetimeStats'
 
 class Dashboard extends Component {
     constructor(props) {
@@ -63,19 +64,8 @@ class Dashboard extends Component {
 
                 <div className="row">
                     <div className="col-lg-3">
-                        <div className="panel panel-default">
-                            <div className="panel-heading"><h4>Lifetime Stats</h4></div>
-                            <div className="panel-body">
-                                <h4>Distance</h4>
-                                <p>Total: {this.state.lifetimeTotals.distance} miles</p>
-                                <p>Best: {this.state.lifetimeBest.distance.value} on {this.state.lifetimeBest.steps.date}</p>
-                                <h4>Steps</h4>
-                                <p>Total: {this.state.lifetimeTotals.steps}</p>
-                                <p>Best: {this.state.lifetimeBest.steps.value} on {this.state.lifetimeBest.steps.date}</p>
-                            </div>
 
-                        </div>
-
+                        <LifetimeStats lifetimeTotals={this.state.lifetimeTotals} lifetimeBest={this.state.lifetimeBest} />
                         <div className="panel panel-default">
                             <div className="panel-heading"><h4>Badges</h4></div>
                             <div className="panel-body">
