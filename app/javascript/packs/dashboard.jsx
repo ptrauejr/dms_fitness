@@ -8,7 +8,9 @@ class Dashboard extends Component {
         super(props)
         this.state = {
             user: {},
-            loggedIn: false
+            loggedIn: false,
+            lifetimeBest: {steps: "", distance: ""},
+            lifetimeTotals: {steps: "", distance: ""},
         }
     }
 
@@ -26,6 +28,17 @@ class Dashboard extends Component {
                 console.log(response)
                 this.setState({user: response.data.user, loggedIn: true})
             }).catch(error => console.log(error))
+
+            axios({
+                method: 'get',
+                url: 'https://api.fitbit.com/1/user/-/activities.json',
+                headers: { 'Authorization': 'Bearer ' + fitbitToken },
+                mode: 'cors',
+            }).then(response => {
+                console.log(response)
+                this.setState({lifetimeBest: response.data.best.total, lifetimeTotals: response.data.lifetime.total})
+            }).catch(error => console.log(error))
+
         }
     }
 
@@ -53,12 +66,20 @@ class Dashboard extends Component {
                         <div className="panel panel-default">
                             <div className="panel-heading"><h4>Lifetime Stats</h4></div>
                             <div className="panel-body">
+                                <h4>Distance</h4>
+                                <p>Total: {this.state.lifetimeTotals.distance} miles</p>
+                                <p>Best: {this.state.lifetimeBest.distance.value} on {this.state.lifetimeBest.steps.date}</p>
+                                <h4>Steps</h4>
+                                <p>Total: {this.state.lifetimeTotals.steps}</p>
+                                <p>Best: {this.state.lifetimeBest.steps.value} on {this.state.lifetimeBest.steps.date}</p>
                             </div>
+
                         </div>
 
                         <div className="panel panel-default">
                             <div className="panel-heading"><h4>Badges</h4></div>
                             <div className="panel-body">
+
                             </div>
                         </div>
                     </div>
