@@ -47,6 +47,40 @@ class Dashboard extends Component {
                         </a>
                     </div>
                 }
+
+                <div className="row">
+                    <div className="col-lg-3">
+                        <div className="panel panel-default">
+                            <div className="panel-heading"><h4>Lifetime Stats</h4></div>
+                            <div className="panel-body">
+                            </div>
+                        </div>
+
+                        <div className="panel panel-default">
+                            <div className="panel-heading"><h4>Badges</h4></div>
+                            <div className="panel-body">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-6">
+                        <div className="panel panel-default">
+                            <div className="panel-heading">Steps</div>
+                        </div>
+
+                        <div className="panel panel-default">
+                            <div className="panel-heading">Distance (miles)</div>
+                        </div>
+
+
+                    </div>
+
+                    <div className="col-lg-2 col-lg-offset-1">
+                        <div className="panel panel-default">
+                            <div className="panel-heading">Your Friends</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
