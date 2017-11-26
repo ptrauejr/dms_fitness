@@ -3,17 +3,12 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios'
 import LifetimeStats from './LifetimeStats'
+import dummyData from './dummyData'
 
 class Dashboard extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            user: {user: ''},
-            loggedIn: false,
-            lifetimeBest: {steps: "", distance: ""},
-            lifetimeTotals: {steps: "", distance: ""},
-            lifetimeStats: {},
-        }
+        this.state = dummyData
     }
 
     fetchFitbitData(url, fitbitToken, stateKey) {
