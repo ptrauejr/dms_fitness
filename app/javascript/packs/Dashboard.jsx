@@ -8,22 +8,22 @@ class Dashboard extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            user: {},
+            user: {user: ''},
             loggedIn: false,
             lifetimeBest: {steps: "", distance: ""},
             lifetimeTotals: {steps: "", distance: ""},
+            lifetimeStats: {},
         }
     }
 
-    fetchFitbitData(url, fitbitToken, stateKey, dataKey) {
+    fetchFitbitData(url, fitbitToken, stateKey) {
         axios({
             method: 'get',
             url: url,
             headers: { 'Authorization': 'Bearer ' + fitbitToken },
             mode: 'cors',
         }).then(response => {
-            console.log(response)
-            this.setState({[stateKey]: response.data[dataKey]})
+            this.setState({[stateKey]: response.data})
         }).catch(error => console.log(error))
     }
 
@@ -34,7 +34,9 @@ class Dashboard extends Component {
 
             this.setState({loggedIn: true})
 
-            this.fetchFitbitData('https://api.fitbit.com/1/user/-/profile.json', fitbitToken, 'user', 'user')
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/profile.json', fitbitToken, 'user')
+
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities.json', fitbitToken, 'LifetimeStats')
 
             axios({
                 method: 'get',
@@ -54,7 +56,7 @@ class Dashboard extends Component {
             <div>
                 <div className="container">
                 <header className="text-center">
-                    <span className="pull-right">{this.state.user.displayName}</span>
+                    <span className="pull-right">{this.state.user.user.displayName}</span>
                     <h1 className="page-header">React Fit</h1>
                     <p className="lead">Your personal fitness dashboard</p>
                 </header>
@@ -71,7 +73,7 @@ class Dashboard extends Component {
                 <div className="row">
                     <div className="col-lg-3">
 
-                        <LifetimeStats lifetimeTotals={this.state.lifetimeTotals} lifetimeBest={this.state.lifetimeBest} />
+                        <LifetimeStats lifetimeStats={this.state.lifetimeStats} />
                         <div className="panel panel-default">
                             <div className="panel-heading"><h4>Badges</h4></div>
                             <div className="panel-body">
