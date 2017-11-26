@@ -15,7 +15,7 @@ class Dashboard extends Component {
         }
     }
 
-    fetchFitbitData(url, fitbitToken, dataKey, dataKeyJson) {
+    fetchFitbitData(url, fitbitToken, stateKey, dataKey) {
         axios({
             method: 'get',
             url: url,
@@ -23,7 +23,7 @@ class Dashboard extends Component {
             mode: 'cors',
         }).then(response => {
             console.log(response)
-            this.setState({[dataKey]: response.data[dataKeyJson]})
+            this.setState({[stateKey]: response.data[dataKey]})
         }).catch(error => console.log(error))
     }
 
@@ -32,15 +32,9 @@ class Dashboard extends Component {
             let fitbitToken = window.location.hash.slice(1).split("&")[0].replace("access_token=", "")
             console.log(fitbitToken)
 
-            axios({
-                method: 'get',
-                url: 'https://api.fitbit.com/1/user/-/profile.json',
-                headers: { 'Authorization': 'Bearer ' + fitbitToken },
-                mode: 'cors',
-            }).then(response => {
-                console.log(response)
-                this.setState({user: response.data.user, loggedIn: true})
-            }).catch(error => console.log(error))
+            this.setState({loggedIn: true})
+
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/profile.json', fitbitToken, 'user', 'user')
 
             axios({
                 method: 'get',
