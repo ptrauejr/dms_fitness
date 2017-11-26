@@ -69,6 +69,7 @@ class Dashboard extends Component {
                                         <div key={i}>
                                             <h5>{badge.shortName}</h5>
                                             <p><img src={badge.image100px} /></p>
+                                            <p>{badge.description}</p>
                                         </div>
                                     )
                                 })}
