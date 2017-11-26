@@ -15,6 +15,18 @@ class Dashboard extends Component {
         }
     }
 
+    fetchFitbitData(url, fitbitToken, dataKey, dataKeyJson) {
+        axios({
+            method: 'get',
+            url: url,
+            headers: { 'Authorization': 'Bearer ' + fitbitToken },
+            mode: 'cors',
+        }).then(response => {
+            console.log(response)
+            this.setState({[dataKey]: response.data[dataKeyJson]})
+        }).catch(error => console.log(error))
+    }
+
     componentDidMount() {
         if(window.location.hash) {
             let fitbitToken = window.location.hash.slice(1).split("&")[0].replace("access_token=", "")
