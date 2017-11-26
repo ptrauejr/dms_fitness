@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb3d00d-93cd-4d8e-99f7-39d8074ce80a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -35,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -45,12 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Steps.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Steps.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Steps.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="77" lean-forward="false" selection-start-line="1" selection-start-column="77" selection-end-line="1" selection-end-column="77" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,8 +114,8 @@
         <option value="$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/dummyData.js" />
         <option value="$PROJECT_DIR$/app/javascript/packs/Badges.jsx" />
-        <option value="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
       </list>
     </option>
   </component>
@@ -353,7 +351,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511630232618</updated>
-      <workItem from="1511630233963" duration="15112000" />
+      <workItem from="1511630233963" duration="15243000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1511630744332</created>
@@ -366,7 +364,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15112000" />
+    <option name="totallyTimeSpent" value="15243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1400" height="866" extended-state="0" />
@@ -463,19 +461,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/packs/Steps.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="77" lean-forward="false" selection-start-line="1" selection-start-column="77" selection-end-line="1" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/packs/Steps.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
