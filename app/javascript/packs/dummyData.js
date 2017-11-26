@@ -3,7 +3,7 @@ const dummyData = {
     loggedIn: false,
     lifetimeStats: {"best": {"total": {"distance": {"date":"", "value":""}, "steps": {"data":"","value":""}}},
                    "lifetime": {"total": {"distance":"", "steps":""}}},
-    badges: {badges: []},
+    badges: {"badges": []},
 }
 
 export default dummyData
