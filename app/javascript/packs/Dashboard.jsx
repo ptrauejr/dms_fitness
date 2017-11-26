@@ -30,18 +30,7 @@ class Dashboard extends Component {
             this.setState({loggedIn: true})
 
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/profile.json', fitbitToken, 'user')
-
-            this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities.json', fitbitToken, 'LifetimeStats')
-
-            axios({
-                method: 'get',
-                url: 'https://api.fitbit.com/1/user/-/activities.json',
-                headers: { 'Authorization': 'Bearer ' + fitbitToken },
-                mode: 'cors',
-            }).then(response => {
-                console.log(response)
-                this.setState({lifetimeBest: response.data.best.total, lifetimeTotals: response.data.lifetime.total})
-            }).catch(error => console.log(error))
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities.json', fitbitToken, 'lifetimeStats')
 
         }
     }
