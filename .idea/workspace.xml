@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb3d00d-93cd-4d8e-99f7-39d8074ce80a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -31,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifetimeStats.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LifetimeStats.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -74,8 +74,8 @@
         <option value="$PROJECT_DIR$/app/javascript/packs/lifetimeStats.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/dashboard.jsx" />
         <option value="$PROJECT_DIR$/app/views/content/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx" />
       </list>
     </option>
   </component>
@@ -306,7 +306,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511630232618</updated>
-      <workItem from="1511630233963" duration="10200000" />
+      <workItem from="1511630233963" duration="10825000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1511630744332</created>
@@ -319,7 +319,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10200000" />
+    <option name="totallyTimeSpent" value="10825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1400" height="866" extended-state="0" />
@@ -392,14 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -407,6 +399,14 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/packs/LifetimeStats.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
