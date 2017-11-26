@@ -19,6 +19,7 @@ class Dashboard extends Component {
             mode: 'cors',
         }).then(response => {
             this.setState({[stateKey]: response.data})
+            console.log(response.data)
         }).catch(error => console.log(error))
     }
 
@@ -59,10 +60,18 @@ class Dashboard extends Component {
                     <div className="col-lg-3">
 
                         <LifetimeStats lifetimeStats={this.state.lifetimeStats} />
+
                         <div className="panel panel-default">
                             <div className="panel-heading"><h4>Badges</h4></div>
                             <div className="panel-body">
-
+                                {this.state.badges.badges.map((badge, i) => {
+                                    return(
+                                        <div key={i}>
+                                            <h5>{badge.shortName}</h5>
+                                            <p><img src={badge.image100px} /></p>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
