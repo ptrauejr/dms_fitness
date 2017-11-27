@@ -5,6 +5,7 @@ const dummyData = {
                    "lifetime": {"total": {"distance":"", "steps":""}}},
     badges: {"badges": []},
     steps: {"activities-steps": ""},
+    distance: {"activities-distance": ""},
 }
 
 export default dummyData

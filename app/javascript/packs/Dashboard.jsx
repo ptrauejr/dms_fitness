@@ -37,6 +37,8 @@ class Dashboard extends Component {
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/badges.json', fitbitToken, 'badges')
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities/steps/date/today/1m.json',
                 fitbitToken, 'steps')
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities/distance/date/today/1m.json',
+                fitbitToken, 'distance')
 
         }
     }
@@ -68,12 +70,7 @@ class Dashboard extends Component {
 
                     <div className="col-lg-6">
                         <TimeSeriesBarChart data={this.state.steps["activities-steps"]} title="Steps" yMax={8000} />
-
-                        <div className="panel panel-default">
-                            <div className="panel-heading">Distance (miles)</div>
-                        </div>
-
-
+                        <TimeSeriesBarChart data={this.state.distance["activities-distance"]} title="Distance (miles)" yMax={9} />
                     </div>
 
                     <div className="col-lg-2 col-lg-offset-1">
