@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios'
 import LifetimeStats from './LifetimeStats'
 import Badges from './Badges'
-import Steps from './Steps'
+import TimeSeriesBarChart from './TimeSeriesBarChart'
 import dummyData from './dummyData'
 
 class Dashboard extends Component {
@@ -67,7 +67,7 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="col-lg-6">
-                        <Steps steps={this.state.steps} />
+                        <TimeSeriesBarChart data={this.state.steps["activities-steps"]} title="Steps" yMax={8000} />
 
                         <div className="panel panel-default">
                             <div className="panel-heading">Distance (miles)</div>
