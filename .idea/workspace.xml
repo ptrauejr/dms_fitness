@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb3d00d-93cd-4d8e-99f7-39d8074ce80a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Friends.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Friends.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -32,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -44,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Friends.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Friends.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Friends.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -117,8 +116,8 @@
         <option value="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/TimeSeriesBarChart.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/dummyData.js" />
-        <option value="$PROJECT_DIR$/app/javascript/packs/Friends.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/packs/Friends.jsx" />
       </list>
     </option>
   </component>
@@ -355,7 +354,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511630232618</updated>
       <workItem from="1511630233963" duration="17811000" />
-      <workItem from="1511743603742" duration="1132000" />
+      <workItem from="1511743603742" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1511630744332</created>
@@ -368,7 +367,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17760000" />
+    <option name="totallyTimeSpent" value="18592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1400" height="866" extended-state="0" />
@@ -654,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/packs/Friends.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -669,6 +660,14 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/packs/Friends.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
