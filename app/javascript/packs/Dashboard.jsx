@@ -6,6 +6,7 @@ import LifetimeStats from './LifetimeStats'
 import Badges from './Badges'
 import TimeSeriesBarChart from './TimeSeriesBarChart'
 import dummyData from './dummyData'
+import Friends from './Friends'
 
 class Dashboard extends Component {
     constructor(props) {
