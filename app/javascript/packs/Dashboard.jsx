@@ -45,14 +45,12 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div>
-                <div className="container">
+            <div className="container">
                 <header className="text-center">
                     <span className="pull-right">{this.state.user.user.displayName}</span>
                     <h1 className="page-header">React Fit</h1>
                     <p className="lead">Your personal fitness dashboard</p>
                 </header>
-                </div>
 
                 {!this.state.loggedIn &&
                     <div className="row text-center">
