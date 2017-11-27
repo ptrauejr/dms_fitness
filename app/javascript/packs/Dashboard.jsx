@@ -39,6 +39,7 @@ class Dashboard extends Component {
                 fitbitToken, 'steps')
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities/distance/date/today/1m.json',
                 fitbitToken, 'distance')
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/friends/leaderboard.json', fitbitToken, 'friends')
 
         }
     }
@@ -54,7 +55,7 @@ class Dashboard extends Component {
 
                 {!this.state.loggedIn &&
                     <div className="row text-center">
-                        <a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22CGCB&redirect_uri=http%3A%2F%2Flocalhost%3A3000&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800">
+                        <a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22CGCB&redirect_uri=http%3A%2F%2Flocalhost%3A3000&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=86400">
                             Log in with fitbit
                         </a>
                     </div>

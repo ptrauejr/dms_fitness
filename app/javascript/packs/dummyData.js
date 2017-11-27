@@ -6,6 +6,7 @@ const dummyData = {
     badges: {"badges": []},
     steps: {"activities-steps": ""},
     distance: {"activities-distance": ""},
+    friends: {"friends": []},
 }
 
 export default dummyData
