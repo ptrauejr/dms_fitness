@@ -8,8 +8,8 @@ const Friends = ({friends}) =>
                 return(
                     <li key={i} className="list-group-item">
                         <span className="badge">{friend.average.steps}</span>
-                        <img src={friend.user.avatar} />
-                        <h5>{friend.user.displayName}</h5>
+                        <img src={friend.user.avatar} style={{height: 50, left: 10, borderRadius: "50%"}}/>
+                        <h4>{friend.user.displayName}</h4>
                     </li>
                 )
             })}
