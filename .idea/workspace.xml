@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb3d00d-93cd-4d8e-99f7-39d8074ce80a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Dashboard.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/Steps.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/dummyData.js" afterPath="$PROJECT_DIR$/app/javascript/packs/dummyData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -48,8 +46,8 @@
       <file leaf-file-name="Steps.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/Steps.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -355,7 +353,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511630232618</updated>
-      <workItem from="1511630233963" duration="16284000" />
+      <workItem from="1511630233963" duration="16562000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1511630744332</created>
@@ -368,7 +366,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16284000" />
+    <option name="totallyTimeSpent" value="16562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1400" height="866" extended-state="0" />
@@ -477,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/Steps.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
