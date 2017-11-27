@@ -74,9 +74,7 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="col-lg-2 col-lg-offset-1">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">Your Friends</div>
-                        </div>
+                        <Friends friends={this.state.friends.friends} />
                     </div>
                 </div>
             </div>
