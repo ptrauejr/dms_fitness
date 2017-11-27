@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios'
 import LifetimeStats from './LifetimeStats'
 import Badges from './Badges'
-import Steps from './Steps'
+import TimeSeriesBarChart from './TimeSeriesBarChart'
 import dummyData from './dummyData'
 
 class Dashboard extends Component {
@@ -37,20 +37,20 @@ class Dashboard extends Component {
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/badges.json', fitbitToken, 'badges')
             this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities/steps/date/today/1m.json',
                 fitbitToken, 'steps')
+            this.fetchFitbitData('https://api.fitbit.com/1/user/-/activities/distance/date/today/1m.json',
+                fitbitToken, 'distance')
 
         }
     }
 
     render() {
         return (
-            <div>
-                <div className="container">
+            <div className="container">
                 <header className="text-center">
                     <span className="pull-right">{this.state.user.user.displayName}</span>
                     <h1 className="page-header">React Fit</h1>
                     <p className="lead">Your personal fitness dashboard</p>
                 </header>
-                </div>
 
                 {!this.state.loggedIn &&
                     <div className="row text-center">
@@ -67,13 +67,8 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="col-lg-6">
-                        <Steps steps={this.state.steps} />
-
-                        <div className="panel panel-default">
-                            <div className="panel-heading">Distance (miles)</div>
-                        </div>
-
-
+                        <TimeSeriesBarChart data={this.state.steps["activities-steps"]} title="Steps" yMax={8000} />
+                        <TimeSeriesBarChart data={this.state.distance["activities-distance"]} title="Distance (miles)" yMax={9} />
                     </div>
 
                     <div className="col-lg-2 col-lg-offset-1">
